@@ -1,0 +1,155 @@
+.Tabs {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+
+  min-height: 48px;
+  margin-bottom: 12px;
+
+  div {
+    cursor: pointer;
+    transition: font-size 0.1s ease;
+  }
+
+  div[aria-checked="true"] {
+    color: initial;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  div:first-child {
+    margin-right: 6px;
+  }
+
+  div:last-child {
+    margin-left: 6px;
+  }
+
+  color: var(--mantine-color-dimmed);
+}
+
+.Items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  &:has(> span) {
+    display: block;
+  }
+
+  :global .mantine-Loader-root {
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Items {
+    display: block;
+  }
+
+  .Item {
+    margin-bottom: 12px;
+  }
+}
+
+.Item {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  :global .mantine-Image-root {
+    border-radius: 6px 6px 0 0;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.InfoAbout {
+  position: relative;
+
+  display: flex;
+  padding: 20px;
+
+  border-radius: 0 0 12px 12px;
+
+  color: black;
+  background-color: var(--mantine-color-white);
+  box-shadow: var(--mantine-shadow-sm);
+
+  .DescriptionMd {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    min-height: 50px;
+
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  :global {
+    .mantine-Avatar-root {
+      margin-right: 12px;
+    }
+
+    .mantine-Badge-root {
+      position: absolute;
+      right: 20px;
+    }
+  }
+}
+
+.PlaceholderText,
+.Placeholder {
+  min-height: 50px;
+
+  color: var(--mantine-color-dimmed);
+  font-size: 12px;
+}
+
+.Placeholder {
+  font-size: initial;
+  display: table;
+  margin: 50px auto;
+}
+
+.SortInfo {
+  position: relative;
+  display: inline-flex;
+}
+
+.IconSort {
+  margin-left: 12px;
+}
+
+.FiltersSet {
+  position: absolute;
+  right: 0;
+  top: 1px;
+
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+
+  background-color: var(--mantine-color-red-8);
+}
+
+html[data-mantine-color-scheme="dark"] .InfoAbout {
+  color: white;
+  background-color: var(--mantine-color-dark-6);
+}
+
+@media screen and (max-width: 768px) {
+  .Item {
+    margin-bottom: 12px;
+  }
+}

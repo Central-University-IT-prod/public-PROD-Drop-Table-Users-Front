@@ -1,0 +1,44 @@
+.Title {
+  display: flex;
+  align-items: center;
+
+  :global button {
+    margin-top: 8px;
+    margin-left: 8px;
+  }
+}
+
+.TextPlaceholder {
+  margin: 50px 0;
+
+  color: var(--mantine-color-dimmed);
+  text-align: center;
+}
+
+.Table {
+  margin-top: 12px;
+  max-width: 1000px;
+}
+
+.FileDescription :global span {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.IconNone {
+  text-align: center !important;
+  color: var(--mantine-color-error);
+
+  :global svg {
+    vertical-align: middle;
+  }
+}
+
+.TableActionButton {
+  text-align: center !important;
+}

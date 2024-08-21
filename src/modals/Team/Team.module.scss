@@ -1,0 +1,67 @@
+.RightActions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  :global .mantine-UnstyledButton-root {
+    display: block;
+    margin-left: 15px;
+  }
+}
+
+.Loader {
+  display: table !important;
+  margin: 0 auto;
+}
+
+.Banner {
+  height: 100px;
+  object-fit: cover;
+
+  border-radius: 12px 12px 0 0 !important;
+}
+
+.Avatar {
+  display: table;
+  margin: 0 auto;
+
+  transform: translateY(-35px);
+}
+
+.TeamName {
+  display: table;
+  margin: 0 auto !important;
+  transform: translateY(-35px);
+}
+
+.AboutTeam {
+  padding: var(--mb-padding, var(--mantine-spacing-md));
+}
+
+.Description {
+  margin-bottom: 32px;
+}
+
+.User {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  :global .mantine-Avatar-root {
+    margin-right: 12px;
+  }
+}
+
+.TitleMembers {
+  margin-bottom: 5px !important;
+}
+
+.MainInfoUser {
+  display: flex;
+  align-items: center;
+}
+
+.UserMajor {
+  color: var(--mantine-color-dimmed);
+  font-size: 14px;
+}

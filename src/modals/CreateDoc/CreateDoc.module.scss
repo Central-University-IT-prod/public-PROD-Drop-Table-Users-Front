@@ -1,0 +1,34 @@
+.ButtonsCondition {
+  display: flex;
+
+  margin-top: 10px;
+  margin-bottom: 6px;
+
+  :global button:has(+ button):first-child {
+    margin-right: 6px;
+  }
+}
+
+.ButtonAddCondition {
+}
+
+.Conditions {
+  display: flex;
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  :global div {
+    margin-right: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.CreateButton {
+  margin-top: 12px;
+}

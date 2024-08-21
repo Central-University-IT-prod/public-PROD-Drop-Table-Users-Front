@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  padding: 0 16px;
+
+  user-select: none;
+}
+
+.User {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  :global {
+    .mantine-Avatar-root {
+      margin-right: 8px;
+    }
+
+    h3 {
+      padding: 0;
+      margin: 0;
+      line-height: 20px;
+    }
+  }
+
+  .InfoAboutUser {
+    margin-right: 12px;
+  }
+
+  .UserRole {
+    color: var(--mantine-color-dimmed);
+    font-size: 12px;
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.Chevron {
+  transition: transform 0.3s ease;
+
+  &[aria-checked="true"] {
+    transform: rotate(180deg);
+  }
+}

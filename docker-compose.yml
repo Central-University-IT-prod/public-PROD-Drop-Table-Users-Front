@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  droptableusers-front:
+    image: ghcr.io/k0ras1k/droptableusers-front:latest
+    container_name: droptableusers-front
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    networks:
+      - global
+
+networks:
+  global:
+    name: global
+    external: true

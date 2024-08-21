@@ -1,0 +1,39 @@
+.Cells .Cell:last-child {
+  margin-bottom: 0;
+}
+
+.Cell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  margin-bottom: 18px;
+
+  .CellAbout {
+    display: flex;
+    align-items: center;
+
+    .CellDescription {
+      color: var(--mantine-color-dimmed);
+      font-size: 13px;
+    }
+
+    :global {
+      .mantine-Avatar-root {
+        margin-right: 8px;
+      }
+
+      h4 {
+        margin: 0;
+        line-height: 18px;
+      }
+    }
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+}

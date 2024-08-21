@@ -1,0 +1,48 @@
+.Description {
+  user-select: none;
+  margin-bottom: 18px;
+
+  :global .mantine-InputWrapper-description {
+    margin-bottom: 6px;
+  }
+}
+
+.Textarea {
+  :global .mantine-Input-section {
+    align-items: start;
+    padding: 5px;
+
+    cursor: pointer;
+
+    svg {
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+
+    svg:not([aria-disabled="true"]):hover {
+      opacity: 0.75;
+      background-color: var(--mantine-color-gray-light);
+    }
+  }
+}
+
+.PreviewMarkdown {
+  display: flex;
+
+  .Markdown {
+    width: 100%;
+  }
+}
+
+.IconOffPreview {
+  color: var(--mantine-color-dimmed);
+  border-radius: 50%;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.75;
+    background-color: var(--mantine-color-gray-light);
+  }
+}

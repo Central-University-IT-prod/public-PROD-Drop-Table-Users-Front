@@ -1,0 +1,29 @@
+.ButtonCreate {
+  width: calc(84% - 12px) !important;
+  margin-right: 12px;
+}
+
+.Titles {
+  display: flex;
+  justify-content: space-between;
+
+  color: var(--mantine-color-dimmed);
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.ButtonCreateTemplate {
+  margin-top: 24px;
+}
+
+.SelectWithCheckbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+
+  :global .mantine-MultiSelect-root {
+    width: 100%;
+    margin-right: 12px;
+  }
+}
